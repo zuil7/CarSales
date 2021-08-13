@@ -2,6 +2,12 @@ PODS:
   - Alamofire (5.4.3)
   - AlamofireNetworkActivityLogger (3.4.0):
     - Alamofire (~> 5.4.0)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/Kingfisher (1.9.2):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
   - IQKeyboardManagerSwift (6.5.5)
   - JGProgressHUD (2.2)
   - Kingfisher (6.3.1)
@@ -21,6 +27,8 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireNetworkActivityLogger
+  - ImageSlideshow
+  - ImageSlideshow/Kingfisher
   - IQKeyboardManagerSwift
   - JGProgressHUD
   - Kingfisher
@@ -36,6 +44,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireNetworkActivityLogger
+    - ImageSlideshow
     - IQKeyboardManagerSwift
     - JGProgressHUD
     - Kingfisher
@@ -50,6 +59,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AlamofireNetworkActivityLogger: 162ab8aee00e6267a4304d7cc134e13ccfe3bcc5
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
@@ -61,6 +71,6 @@ SPEC CHECKSUMS:
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
 
-PODFILE CHECKSUM: bb3aa717fe10970a4966971b836c47dfa9482f07
+PODFILE CHECKSUM: 665af0c3d57af4d1e8e73f05ed9532776030024a
 
 COCOAPODS: 1.10.1

@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol Coordinator {
-  var childCoordinator: [Coordinator] { get }
+protocol Coordinator: class {
+  var childCoordinators: [Coordinator] { get }
   func start()
 }
 
 final class AppCoordinator: Coordinator {
-  private(set) var childCoordinator: [Coordinator] = []
+  private(set) var childCoordinators: [Coordinator] = []
   private let window: UIWindow
   init(window: UIWindow) {
     self.window = window
@@ -23,7 +23,7 @@ final class AppCoordinator: Coordinator {
   func start() {
     let nav = UINavigationController()
     let mainViewController = MainViewControllerCoordinator(navigationController: nav)
-    childCoordinator.append(mainViewController)
+    childCoordinators.append(mainViewController)
     mainViewController.start()
     window.rootViewController = nav
     window.makeKeyAndVisible()

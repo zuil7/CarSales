@@ -21,6 +21,8 @@ target 'CarSales' do
   pod 'NVActivityIndicatorView/Extended'
   pod 'SwiftyUserDefaults'
   pod 'JGProgressHUD'
+  pod "ImageSlideshow"
+  pod "ImageSlideshow/Kingfisher"
 end
 
 post_install do |installer|

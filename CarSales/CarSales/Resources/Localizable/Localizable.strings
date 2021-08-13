@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  CarSales
+
+  Created by Louise Nicolas Namoc on 8/13/21.
+  Copyright © 2021 Louise Nicolas Namoc. All rights reserved.
+*/
+
+// MARK: - Shared
+location.title = "Location: %@";
+price.title = "Price: %@";
+saleStatus.title = "Sale Status: %@";
+comments.title = "Comments:";

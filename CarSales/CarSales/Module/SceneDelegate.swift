@@ -6,6 +6,7 @@
 //  Copyright © 2020 "Organization Name". All rights reserved.
 //
 
+import AlamofireNetworkActivityLogger
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -17,6 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     willConnectTo session: UISceneSession,
     options connectionOptions: UIScene.ConnectionOptions
   ) {
+    #if DEBUG
+      NetworkActivityLogger.shared.level = .debug
+      NetworkActivityLogger.shared.startLogging()
+    #endif
+
     guard let scene = (scene as? UIWindowScene) else { return }
     let window = UIWindow(windowScene: scene)
     self.window = window

@@ -10,7 +10,7 @@ import Alamofire
 import Foundation
 import SwiftyUserDefaults
 
-final class BaseService {
+class BaseService {
   func consumeAPI<T: Decodable>(
     _ decodeType: T.Type,
     endPoint url: String,
