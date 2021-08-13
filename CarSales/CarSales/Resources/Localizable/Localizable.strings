@@ -11,3 +11,5 @@ location.title = "Location: %@";
 price.title = "Price: %@";
 saleStatus.title = "Sale Status: %@";
 comments.title = "Comments:";
+error.title = "Error Info";
+error.generic.title = "Error Encountered.";

@@ -94,9 +94,16 @@ private extension CarInfoViewController {
 
 private extension CarInfoViewController {
   func fetchCarInfoHandler() -> APIClientResultClosure {
-    return { [weak self] status, _ in
-      guard let self = self, status else { return }
+    return { [weak self] status, message in
+      guard let self = self else { return }
       self.dismissHud()
+      guard status else {
+        self.showAlert(
+          title: S.errorTitle(),
+          message: message ?? S.errorGenericTitle()
+        )
+        return
+      }
       self.populateInfo()
     }
   }
