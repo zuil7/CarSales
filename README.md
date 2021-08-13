@@ -1,6 +1,6 @@
 # Carsales App Test
 
-<img src="https://i.ibb.co/gZ6skdH/Screen-Shot-2021-08-13-at-5-10-31-PM.png" alt="Screen-Shot-2021-08-13-at-5-10-31-PM" border="0">
+<img src="https://i.ibb.co/gZ6skdH/Screen-Shot-2021-08-13-at-5-10-31-PM.png" alt="Screen-Shot-2021-08-13-at-5-10-31-PM" border="0" width="188">&nbsp;&nbsp;<img src="https://i.ibb.co/HD8DZ4q/Screen-Shot-2021-08-13-at-5-10-38-PM.png" alt="Screen-Shot-2021-08-13-at-5-10-38-PM" border="0" width="188">&nbsp;&nbsp;<img src="https://i.ibb.co/gFHj3qH/Screen-Shot-2021-08-13-at-5-11-32-PM.png" alt="Screen-Shot-2021-08-13-at-5-11-32-PM" border="0" width="288">&nbsp;&nbsp;<img src="https://i.ibb.co/Cn97bPb/Screen-Shot-2021-08-13-at-5-11-39-PM.png" alt="Screen-Shot-2021-08-13-at-5-11-39-PM" border="0" width="288">
 
 This is just a test app for carsales fetching and displaying information.
 
