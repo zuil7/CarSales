@@ -17,6 +17,10 @@
 		3158B02A26C50B2A00F34BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3158B02926C50B2A00F34BA6 /* Main.storyboard */; };
 		3158B02F26C50D1E00F34BA6 /* UIImageView+KingFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3158B02E26C50D1E00F34BA6 /* UIImageView+KingFisher.swift */; };
 		31880F6826C651330067A0D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31880F6726C651330067A0D5 /* Localizable.strings */; };
+		31880F7026C659340067A0D5 /* MainIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31880F6F26C659340067A0D5 /* MainIpad.storyboard */; };
+		31880FA526C65A750067A0D5 /* MainViewControllerIpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31880FA426C65A750067A0D5 /* MainViewControllerIpad.swift */; };
+		31880FAA26C65BF20067A0D5 /* MainViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31880FA926C65BF20067A0D5 /* MainViewController+CollectionView.swift */; };
+		31880FAF26C65C7F0067A0D5 /* CarCellPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31880FAE26C65C7F0067A0D5 /* CarCellPad.swift */; };
 		31D492C726C52571008341A2 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D492C626C52571008341A2 /* CarCell.swift */; };
 		31D4930F26C52744008341A2 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D4930E26C52744008341A2 /* MainViewController+TableView.swift */; };
 		31D4931526C529E9008341A2 /* UIView+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D4931426C529E9008341A2 /* UIView+Designable.swift */; };
@@ -79,6 +83,10 @@
 		3158B02926C50B2A00F34BA6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3158B02E26C50D1E00F34BA6 /* UIImageView+KingFisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+KingFisher.swift"; sourceTree = "<group>"; };
 		31880F6726C651330067A0D5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		31880F6F26C659340067A0D5 /* MainIpad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainIpad.storyboard; sourceTree = "<group>"; };
+		31880FA426C65A750067A0D5 /* MainViewControllerIpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerIpad.swift; sourceTree = "<group>"; };
+		31880FA926C65BF20067A0D5 /* MainViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		31880FAE26C65C7F0067A0D5 /* CarCellPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellPad.swift; sourceTree = "<group>"; };
 		31D492C626C52571008341A2 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		31D4930E26C52744008341A2 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
 		31D4931426C529E9008341A2 /* UIView+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Designable.swift"; sourceTree = "<group>"; };
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				3158B02926C50B2A00F34BA6 /* Main.storyboard */,
+				31880F6F26C659340067A0D5 /* MainIpad.storyboard */,
 				31D4931926C52B2D008341A2 /* Services */,
 				31E3FEE926C4F2E6008DAD43 /* ViewModel */,
 				31E3FEEA26C4F2E6008DAD43 /* ReusableCell */,
@@ -197,6 +206,8 @@
 				31E3FEF226C4F3A1008DAD43 /* MainViewController.swift */,
 				31D4930E26C52744008341A2 /* MainViewController+TableView.swift */,
 				314EC77A26C6276A00FD7588 /* CarInfoViewController.swift */,
+				31880FA426C65A750067A0D5 /* MainViewControllerIpad.swift */,
+				31880FA926C65BF20067A0D5 /* MainViewController+CollectionView.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -218,6 +229,7 @@
 				31D492C626C52571008341A2 /* CarCell.swift */,
 				314EC76526C6115C00FD7588 /* CarCellViewModelProtocol.swift */,
 				314EC76A26C6120900FD7588 /* CarCellViewModel.swift */,
+				31880FAE26C65C7F0067A0D5 /* CarCellPad.swift */,
 			);
 			path = ReusableCell;
 			sourceTree = "<group>";
@@ -535,6 +547,7 @@
 				31880F6826C651330067A0D5 /* Localizable.strings in Resources */,
 				48FD44D524839CFA004975D4 /* Color.xcassets in Resources */,
 				48FD44CF24839C7A004975D4 /* Assets.xcassets in Resources */,
+				31880F7026C659340067A0D5 /* MainIpad.storyboard in Resources */,
 				48FD44D024839C7A004975D4 /* LaunchScreen.storyboard in Resources */,
 				3158B02A26C50B2A00F34BA6 /* Main.storyboard in Resources */,
 			);
@@ -673,7 +686,10 @@
 				314EC77626C6234C00FD7588 /* CarDetailsCoordinator.swift in Sources */,
 				31E3FEF826C4F5C2008DAD43 /* Alias.swift in Sources */,
 				314EC77B26C6276A00FD7588 /* CarInfoViewController.swift in Sources */,
+				31880FAA26C65BF20067A0D5 /* MainViewController+CollectionView.swift in Sources */,
+				31880FA526C65A750067A0D5 /* MainViewControllerIpad.swift in Sources */,
 				31E3FEF326C4F3A1008DAD43 /* MainViewController.swift in Sources */,
+				31880FAF26C65C7F0067A0D5 /* CarCellPad.swift in Sources */,
 				31D4932526C52D7B008341A2 /* CarListResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,7 +788,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -827,7 +843,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

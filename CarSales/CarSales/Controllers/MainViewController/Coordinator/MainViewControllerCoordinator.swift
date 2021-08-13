@@ -18,15 +18,24 @@ final class MainViewControllerCoordinator: Coordinator {
   }
 
   func start() {
-    let vc = R.storyboard.main.mainViewController()!
-    vc.viewModel = CarViewModel(service: CarService())
-    vc.viewModel.selectedCarHandler = carSelectedHandler()
-    nav.setViewControllers([vc], animated: false)
+    if UIDevice.current.userInterfaceIdiom == .pad {
+      let vc = R.storyboard.mainIpad.mainViewControllerIpad()!
+      vc.viewModel = CarViewModel(service: CarService())
+      vc.viewModel.selectedCarHandler = carSelectedHandler()
+      nav.setViewControllers([vc], animated: false)
+    } else {
+      let vc = R.storyboard.main.mainViewController()!
+      vc.viewModel = CarViewModel(service: CarService())
+      vc.viewModel.selectedCarHandler = carSelectedHandler()
+      nav.setViewControllers([vc], animated: false)
+    }
   }
 
   func startCarDetailsEvent(carInfo: Car) {
-    let carDetailsCoordinator = CarDetailsCoordinator(navigationController: nav,
-                                                      car: carInfo)
+    let carDetailsCoordinator = CarDetailsCoordinator(
+      navigationController: nav,
+      car: carInfo
+    )
     carDetailsCoordinator.didFinishHandler = childDidFinish()
     childCoordinators.append(carDetailsCoordinator)
     carDetailsCoordinator.start()
