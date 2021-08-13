@@ -1,5 +1,7 @@
 # Carsales App Test
 
+<img src="https://i.ibb.co/gZ6skdH/Screen-Shot-2021-08-13-at-5-10-31-PM.png" alt="Screen-Shot-2021-08-13-at-5-10-31-PM" border="0">
+
 This is just a test app for carsales fetching and displaying information.
 
 # Design Pattern Used
